@@ -48,7 +48,7 @@ li a{
     bottom: 20px;
     right: 20px;
     z-index: 999;
-    animation: up-down 1.4s infinite ease-in-out alternate;
+    animation: up-down 1.2s infinite ease-in-out alternate;
 }
 
 #home{
@@ -64,16 +64,18 @@ h1{
     color: #3A3A3A;
     overflow: hidden; 
     white-space: nowrap;
-    animation: 
-    typing 5s steps(80, end),
-    blink-caret .75s step-end infinite;
+    animation: typing 5s steps(80, end), blink-caret .75s step-end infinite;
 }
-
-/* h1 span{
-    animation: swing ease-in-out 1s infinite alternate;
-} */
+ 
 #home p{
-    margin-top: 40px;   
+    font-size: 20px;
+    margin: 0 auto;
+    overflow: hidden; 
+    white-space: nowrap;
+    margin-top: 40px; 
+    animation: fadeIn 1.4s ease-in-out alternate; 
+    animation-fill-mode: both;
+    animation-delay: 1.2s;  
 }
 
 
@@ -261,7 +263,7 @@ footer p{
     from { width: 0 }
     to { width: 100% }
 }
-@keyframes swing {
-    0% { transform: rotate(3deg); }
-    100% { transform: rotate(-3deg); }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1;; }
 }
