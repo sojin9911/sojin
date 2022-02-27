@@ -44,13 +44,3 @@ window.addEventListener('load', function(event){
       });
   });
 
-
-//   function doSomething(){
-//       alert("시발!");
-//   }
-
-//   $(function (){
-//     $(window).scroll(function(){
-//         doSomething();
-//     });
-//   });
